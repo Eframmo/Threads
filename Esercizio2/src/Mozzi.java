@@ -17,6 +17,5 @@ public class Mozzi extends Thread{
                 interrupt();
             }
         }
-
     }
 }
