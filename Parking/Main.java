@@ -19,7 +19,7 @@ public class Main {
 
         for (int i = 0; i < MAX_AUTO; i++) {
             int index = r.nextInt(0, types.length);
-            autos.add(new Veicolo("Auto-" + (i + 1), parkingLot, types[index]));
+            autos.add(new Veicolo( types[index].name() + "-" + (i + 1), parkingLot, types[index]));
         }
 
         for(Veicolo a : autos) a.start();

@@ -14,7 +14,7 @@ public class ParkingLot {
             System.out.println(veicolo.getName() + " in attesa (parcheggio pieno)");
             wait();
         }
-        availableSlots--;
+        availableSlots -= veicolo.getType().getPostiOccupati();
         System.out.println(veicolo.getName() + " entrata. Posti disponibili: " + availableSlots);
     }
 
