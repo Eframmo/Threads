@@ -2,6 +2,7 @@ package Exercises.Parking;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -13,8 +14,13 @@ public class Main {
 
         List<Veicolo> autos = new ArrayList<>();
         final int MAX_AUTO = 10;
+        final Random r = new Random();
+        VehicolType[] types = VehicolType.values();
 
-        for (int i = 0; i < MAX_AUTO; i++) autos.add(new Veicolo("Auto-" + (i + 1), parkingLot));
+        for (int i = 0; i < MAX_AUTO; i++) {
+            int index = r.nextInt(0, types.length);
+            autos.add(new Veicolo("Auto-" + (i + 1), parkingLot, types[index]));
+        }
 
         for(Veicolo a : autos) a.start();
         for(Veicolo a : autos) a.join();

@@ -8,6 +8,10 @@ public class Veicolo extends Thread {
     private ParkingLot parkingLot;
     private VehicolType type;
 
+    public VehicolType getType(){
+        return type;
+    }
+
     public Veicolo(String name, ParkingLot parkingLot, VehicolType type) {
         setName(name);
         this.rand = new Random();
