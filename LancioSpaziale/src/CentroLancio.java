@@ -19,14 +19,9 @@ public class CentroLancio {
         rampe--;
         torri--;
 
-        int ran = new Random().nextInt(3000)+2000;
-        System.out.println(Thread.currentThread().getName() + ": esegue per " + (ran/1000) + " secondi");
+    }
 
-        int inizio = (int) System.currentTimeMillis();
-        while ((int) System.currentTimeMillis() - inizio < ran){
-            wait(ran-((int) System.currentTimeMillis() - inizio));
-        }
-
+    public synchronized void rilascioRisorse() throws InterruptedException {
         rampe++;
         torri++;
         notifyAll();

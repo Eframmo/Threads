@@ -16,6 +16,12 @@ public class Missione extends Thread{
         try {
             sleep(ran);
             centroLancio.acquisisciRisorse();
+
+            ran = new Random().nextInt(3000)+2000;
+            System.out.println(Thread.currentThread().getName() + ": esegue per " + (ran/1000) + " secondi");
+            Thread.sleep(ran);
+
+            centroLancio.rilascioRisorse();
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }
