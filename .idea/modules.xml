@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Barriera/Barriera.iml" filepath="$PROJECT_DIR$/Barriera/Barriera.iml" />
       <module fileurl="file://$PROJECT_DIR$/Biglietti/Biglietti.iml" filepath="$PROJECT_DIR$/Biglietti/Biglietti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Catena/Catena.iml" filepath="$PROJECT_DIR$/Catena/Catena.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio2/Esercizio2.iml" filepath="$PROJECT_DIR$/Esercizio2/Esercizio2.iml" />
       <module fileurl="file://$PROJECT_DIR$/LaboratorioAlchimia/LaboratorioAlchimia.iml" filepath="$PROJECT_DIR$/LaboratorioAlchimia/LaboratorioAlchimia.iml" />
       <module fileurl="file://$PROJECT_DIR$/LancioSpaziale/LancioSpaziale.iml" filepath="$PROJECT_DIR$/LancioSpaziale/LancioSpaziale.iml" />
